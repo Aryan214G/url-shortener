@@ -7,6 +7,7 @@ import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import { HeaderMegaMenu } from './Components/Navbar/HeaderMegaMenu';
 import Profile from './Pages/Profile/Profile';
 import UrlShortner from './Pages/UrlShortener/UrlShortener';
+import MyUrls from './Pages/MyUrls/MyUrls';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Route element={<PrivateRoute/>}>
             <Route path='/profile' element={<Profile/>} />
             <Route path='/urlshortner' element={<UrlShortner/>} />
+            <Route path='/MyUrls' element={<MyUrls/>} />
             </Route>
         </Routes>
     </Router>
